@@ -54,10 +54,14 @@ const profilesInfo = profiles.map(({ network, url }) => {
     hotkey: `ctrl+${firstLetter}`,
   }
 })
+
+
+
 ---
 
 <footer id="normal-footer" class="no-print">
-  Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
+  Pulsa <kbd id="key"></kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
+  
 </footer>
 
 <div id="footer-button" class="no-print">
@@ -157,6 +161,13 @@ const profilesInfo = profiles.map(({ network, url }) => {
   }
 </script>
 
+<script is:inline>
+  const isWindows = navigator.userAgent.indexOf("Win") !== -1;
+
+  const keyboard = document.getElementById("key")
+  console.log(keyboard)
+  keyboard.innerHTML = isWindows ? 'Ctrl' : 'Cmd'
+</script>
 <style>
   @media print {
     ninja-keys {
