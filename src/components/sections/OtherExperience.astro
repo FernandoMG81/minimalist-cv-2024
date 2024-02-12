@@ -1,18 +1,18 @@
 ---
 import Section from "../Section.astro"
-
-import { work } from "@cv"
+import Star from "@/icons/star.astro"
+import { volunteer } from "@cv"
 ---
 
-<Section title="Experiencia laboral">
+<Section title="Otras Experiencias">
   <ul>
     {
-      work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url }) => {
+      volunteer.map(
+        ({ organization, startDate, endDate, position, summary, highlights, url }) => {
           const startYear = new Date(startDate).getFullYear()
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Actual"
-            const years = startYear !== endYear ? `${startYear} - ${endYear}` : startYear
+          const years = startYear !== endYear ? `${startYear} - ${endYear}` : startYear
 
           return (
             <li>
@@ -20,17 +20,23 @@ import { work } from "@cv"
                 <header>
                   <div>
                     <h3>
-                      <a href={url} title={`Ver ${name}`} target="_blank">
-                        {name}
+                      <a href={url} title={`Ver ${organization}`} target="_blank">
+                        {organization}
                       </a>
                     </h3>
                     <h4>{position}</h4>
                   </div>
+
                   <time>{years}</time>
                 </header>
 
                 <footer>
                   <p>{summary}</p>
+                  <small>
+                    {
+                      highlights[0].length > 0 && <Star/>                    }
+                    {highlights}
+                  </small>
                 </footer>
               </article>
             </li>
@@ -71,6 +77,10 @@ import { work } from "@cv"
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 4px;
+  }
+
+  footer span{
+    
   }
 
   time {

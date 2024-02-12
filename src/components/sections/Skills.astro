@@ -1,16 +1,28 @@
 ---
 import Section from "../Section.astro"
-import HTML from "@/icons/html.astro"
-import CSS from "@/icons/css.astro"
-import JavaScript from "@/icons/javascript.astro"
-import TypeScript from "@/icons/type.astro"
-import React from "@/icons/react.astro"
-import Node from "@/icons/node.astro"
-import MySQL from "@/icons/sql.astro"
-import Git from "@/icons/git.astro"
-import GitHub from "@/icons/GitHub.astro"
-import Tailwind from "@/icons/tailwind.astro"
-import Next from "@/icons/next.astro"
+
+
+import {
+  HTML,
+  CSS,
+  JavaScript,
+  TypeScript,
+  React,
+  Node,
+  SQL,
+  Git,
+  GitHub,
+  Tailwind,
+  Next,
+  AstroIcon,
+  Android,
+  Xcode,
+  Swift,
+  Csharp,
+  Express,
+  MongoDB
+} from "@/icons"
+
 import { skills } from "@cv"
 
 const SKILLS_ICONS: Record<string, any> = {
@@ -20,11 +32,18 @@ const SKILLS_ICONS: Record<string, any> = {
   TypeScript,
   React,
   Node,
-  MySQL,
+  SQL,
   Git,
   GitHub,
   Next,
   Tailwind,
+  AstroIcon,
+  Android,
+  Xcode,
+  Swift,
+  Csharp,
+  Express,
+  MongoDB
 }
 ---
 
@@ -32,12 +51,13 @@ const SKILLS_ICONS: Record<string, any> = {
   <ul>
     {
       skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name
+        const iconName = name === "Next.js" ? "Next" : name === "Astro" ? "AstroIcon" : name
         const Icon = SKILLS_ICONS[iconName]
+        const lName = name === 'Csharp' ? 'C#' : name
 
         return (
           <li>
-            {Icon && <Icon />} <span>{name}</span>
+            {Icon && <Icon />} <span>{lName}</span>
           </li>
         )
       })
