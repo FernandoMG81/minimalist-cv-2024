@@ -16,3 +16,10 @@ export { default as Xcode } from './xcode.astro';
 export { default as Csharp } from './csharp.astro';
 export { default as Express } from './express.astro';
 export { default as MongoDB } from './mongoDB.astro';
+export { default as Web } from './web.astro';
+export { default as X } from './X.astro';
+export { default as LinkedIn } from './LinkedIn.astro';
+export { default as Mail } from './Mail.astro';
+export { default as Phone } from './Phone.astro'
+export { default as WorldMap } from './WorldMap.astro'
+
