@@ -29,7 +29,7 @@
   },
   "work": [
     {
-      "name": "Request",
+      "name": "Request Information Technology",
       "position": "JavaScript software developer SR",
       "url": "http://www.request.com.ar/",
       "startDate": "2020-01-01",
@@ -40,12 +40,12 @@
       ]
     },
     {
-      "name": "Valkimia",
-      "position": "Desarrollador Genexus Jr",
-      "url": "https://www.valkimia.com/",
-      "startDate": "2019-01-09",
+      "name": "Tiarc SRL",
+      "position": "Jefe de compras y facturación",
+      "url": "https://www.tiarc.com.ar/",
+      "startDate": "2012-07-01",
       "endDate": "2019-12-31",
-      "summary": "Soporte y resolución de tickets de software para logística. Tecnologías/Herramientas: Genexus 14, Base de datos SQL, Jira",
+      "summary": "Gestión de compras productivas de la empresa, abastecimiento, rotación y seguimiento de objetivos de ventas. Tecnologías/Herramientas: Sistema ERP America, Herramientas office.",
       "highlights": [
         ""
       ]
@@ -237,7 +237,7 @@
     {
       "language": "Inglés",
       "institution": "Universidad nacional de Quilmes",
-      "comment": "Inglés intermedio superior 3 (Aprobado)",
+      "comment": "INGLÉS TALLER DE LENGUA, COMUNICACIÓN Y CULTURA (Cursando)",
       "fluency": "Advanced"
     }
   ],

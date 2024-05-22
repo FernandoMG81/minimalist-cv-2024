@@ -32,13 +32,13 @@ const printInfo = [email, phone, linkedUrl, githubUrl].filter(Boolean).join(" â€
         <WorldMap />
         {city}, {region}
       </span>
-      <footer class="print">
+      <!-- <footer class="rere">
         {printInfo}
         <div>
           {url}
         </div>
-      </footer>
-      <footer class="no-print">
+      </footer> -->
+      <footer class="rere">
         {
           email && (
             <a
@@ -93,9 +93,9 @@ const printInfo = [email, phone, linkedUrl, githubUrl].filter(Boolean).join(" â€
         }
       </footer>
     </div>
-    <figure>
+    <!-- <figure>
       <img src={image} alt={name} />
-    </figure>
+    </figure> -->
   </div>
 </Section>
 
@@ -104,13 +104,15 @@ const printInfo = [email, phone, linkedUrl, githubUrl].filter(Boolean).join(" â€
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
   }
 
   .info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem;
     padding-right: 32px;
   }
