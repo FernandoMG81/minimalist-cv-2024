@@ -30,7 +30,9 @@ import { work } from "@cv"
                 </header>
 
                 <footer>
-                  <p>{summary}</p>
+                  <ul class="sublist">
+                    { summary && summary.map((s, i) => <li class="sublist"><p>{s}</p></li>) }
+                  </ul>
                 </footer>
               </article>
             </li>
@@ -46,6 +48,20 @@ import { work } from "@cv"
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  ul.sublist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  ul.sublist > li.sublist {
+    margin-left: 4px;
+  }
+
+  p{
+    text-wrap: pretty;
   }
 
   article {

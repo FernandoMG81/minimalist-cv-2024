@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Fernando Martin Gordillo",
-    "label": "FrontEnd Developer con +4 años de experiencia",
+    "label": "Analista de compras",
     "image": "/me.webp",
     "email": "fernando.martin.gordillo@outlook.com",
     "phone": "+54 91167408147",
-    "url": "https://portfolio-astro-eosin.vercel.app/",
+    "url": "",
     "summary": "Desarrollador...",
     "location": {
       "address": "",
@@ -19,11 +19,6 @@
         "network": "LinkedIn",
         "username": "FernandoMG81",
         "url": "https://www.linkedin.com/in/fernando-martin-gordillo-01779a171/"
-      },
-      {
-        "network": "GitHub",
-        "username": "FernandoMG81",
-        "url": "https://github.com/FernandoMG81"
       }
     ]
   },
@@ -34,7 +29,7 @@
       "url": "http://www.request.com.ar/",
       "startDate": "2020-01-01",
       "endDate": "2023-12-31",
-      "summary": "Desarrollo a medida del cliente sobre plataforma web Esker, utilizando SDK interna, con integraciones con SAP. Soporte a países de LATAM, Asia y Norteamerica. Tecnologías/Herramientas: Html, Css, React, Base de datos SQL",
+      "summary": ["Desarrollo a medida del cliente sobre plataforma web Esker, utilizando SDK interna, con integraciones con SAP. Soporte a países de LATAM, Asia y Norteamerica. Tecnologías/Herramientas: Html, Css, React, Base de datos SQL"],
       "highlights": [
         ""
       ]
@@ -45,7 +40,18 @@
       "url": "https://www.tiarc.com.ar/",
       "startDate": "2012-07-01",
       "endDate": "2019-12-31",
-      "summary": "Gestión de compras productivas de la empresa, abastecimiento, rotación y seguimiento de objetivos de ventas. Tecnologías/Herramientas: Sistema ERP America, Herramientas office.",
+      "summary": ["Compras: Encargado de análisis, administración y gestión de compras productivas de la empresa, manteniendo la continuidad del abastecimiento según las políticas de la misma, rotación, seguimiento de promociones, seguimiento de objetivos de ventas por rubros y vendedores.", "Facturación: Bajada y control de pedidos, consolidados, facturas y hojas de ruta. Control de stock, ajustes, diferencias.", "Soporte: Configuración de usuarios y permisos del sistema de gestión América."],
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "Galante D'antonio S.A.",
+      "position": "Asistencia gerencial",
+      "url": "https://www.galantedantonio.com/",
+      "startDate": "2008-04-01",
+      "endDate": "2012-02-01",
+      "summary": ["Asistencia gerencial, seguimiento e informes de patentamientos diarios, conciliación de Ctas Ctes, asientos, confección y manejo de planillas Excel para controles varios como: cumplimiento de objetivos de vendedores por sucursal y tipo. Seguimiento diario de ventas de accesorios por facturistas."],
       "highlights": [
         ""
       ]
@@ -81,6 +87,18 @@
     "studyType": "",
     "startDate": "2017-01-01",
     "endDate": "2019-01-01",
+    "score": "8.85",
+    "courses": [
+      ""
+    ]
+  },
+  {
+    "institution": "Facultad de Ciencias Económicas UBA",
+    "url": "https://www.capacitarte.org/",
+    "area": "Excel avanzado",
+    "studyType": "",
+    "startDate": "2016-07-01",
+    "endDate": "2016-07-01",
     "score": "8.85",
     "courses": [
       ""
