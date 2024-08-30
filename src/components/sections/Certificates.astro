@@ -2,6 +2,7 @@
 import Section from "../Section.astro"
 
 import { certificates } from "@cv"
+const months = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"]
 ---
 
 <Section title="Certificaciones">
@@ -10,6 +11,7 @@ import { certificates } from "@cv"
       certificates.map(({ issuer, date, name, url }) => {
         const startYear = new Date(date).getFullYear()
         const years = `${startYear}`
+        const month = months[new Date(date).getMonth()]
 
         return (
           <li>
@@ -18,12 +20,12 @@ import { certificates } from "@cv"
                 <div>
                   <h3>{issuer}</h3>
                 </div>
-
-                <time>{years}</time>
+                <time>{month}-{years}</time>
               </header>
 
               <footer>
-                <p>{name}</p>
+                <p>{name}</p>                
+                <a class="no-print" href="{url}">Credencial</a>        
               </footer>
             </article>
           </li>
@@ -35,12 +37,16 @@ import { certificates } from "@cv"
 
 <style>
   ul {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
 
   article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     margin-left: 10px;
   }
 
@@ -52,15 +58,27 @@ import { certificates } from "@cv"
   header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
   }
 
   time {
     text-align: end;
     color: #555;
     font-size: 0.85rem;
-    min-width: 102px;
+    min-width: 70px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer p {
+    margin-bottom: auto;
+  }
+
+  footer a {
+    margin-top: 10px;
+* Alinea el enlace al fondo */
   }
 
   @media (width <= 700px) {

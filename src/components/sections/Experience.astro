@@ -2,6 +2,8 @@
 import Section from "../Section.astro"
 
 import { work } from "@cv"
+
+const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 ---
 
 <Section title="Experiencia laboral">
@@ -9,10 +11,15 @@ import { work } from "@cv"
     {
       work.map(
         ({ name, startDate, endDate, position, summary, highlights, url }) => {
+
+          const startMonth = new Date(startDate).getMonth()
+          const endMonth = endDate != null ? new Date(endDate).getMonth() : 12
+
           const startYear = new Date(startDate).getFullYear()
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
-            const years = startYear !== endYear ? `${startYear} - ${endYear}` : startYear
+          const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actual"
+          
+          const dates = `${monthNames[startMonth]} ${startYear} - ${monthNames[endMonth]} ${endYear}`
+            
 
           return (
             <li>
@@ -26,7 +33,7 @@ import { work } from "@cv"
                     </h3>
                     <h4>{position}</h4>
                   </div>
-                  <time>{years}</time>
+                  <time>{dates}</time>
                 </header>
 
                 <footer>

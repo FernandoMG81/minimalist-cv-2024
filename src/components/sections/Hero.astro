@@ -32,13 +32,38 @@ const printInfo = [email, phone, linkedUrl, githubUrl].filter(Boolean).join(" â€
         <WorldMap />
         {city}, {region}
       </span>
-      <!-- <footer class="rere">
-        {printInfo}
-        <div>
-          {url}
-        </div>
-      </footer> -->
-      <footer class="rere">
+      <footer class="print">
+        {
+          email && (
+            <div>
+              <Mail />
+                {email}
+            </div>
+        )
+        }
+        {
+          phone && (
+            <div>
+              <Phone />{phone}
+            </div>
+          )
+        }
+        {
+          linkedUrl && (
+            <div>
+              <LinkedIn />{linkedUrl}
+            </div>
+          )
+        }
+        {
+          url && (
+            <div>
+              <Web />{url}
+            </div>
+          )
+        }
+      </footer>
+      <footer class="no-print">
         {
           email && (
             <a
@@ -114,7 +139,7 @@ const printInfo = [email, phone, linkedUrl, githubUrl].filter(Boolean).join(" â€
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    padding-right: 32px;
+    
   }
 
   h1 {
@@ -150,6 +175,17 @@ const printInfo = [email, phone, linkedUrl, githubUrl].filter(Boolean).join(" â€
     display: flex;
     gap: 4px;
     margin-top: 8px;
+
+    & div{
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  }
+
+  footer.print {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   footer a {
@@ -196,4 +232,13 @@ const printInfo = [email, phone, linkedUrl, githubUrl].filter(Boolean).join(" â€
       margin: 0 auto;
     }
   }
+
+  @media print {
+  footer.print {
+    display: inline-grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+
 </style>

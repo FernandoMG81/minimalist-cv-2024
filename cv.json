@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Fernando Martin Gordillo",
-    "label": "FrontEnd Developer con +4 años de experiencia",
+    "label": "Fullstack Developer",
     "image": "/me.webp",
     "email": "fernando.martin.gordillo@outlook.com",
     "phone": "+54 91167408147",
@@ -10,7 +10,7 @@
     "location": {
       "address": "",
       "postalCode": "1646",
-      "city": "San Fernando",
+      "city": "San Fernando, GB",
       "countryCode": "AR",
       "region": "Argentina"
     },
@@ -18,7 +18,7 @@
       {
         "network": "LinkedIn",
         "username": "FernandoMG81",
-        "url": "https://www.linkedin.com/in/fernando-martin-gordillo-01779a171/"
+        "url": "https://www.linkedin.com/in/gordillofernando/"
       },
       {
         "network": "GitHub",
@@ -32,7 +32,7 @@
       "name": "Request Information Technology",
       "position": "JavaScript software developer SR",
       "url": "http://www.request.com.ar/",
-      "startDate": "2020-01-01",
+      "startDate": "2020-01-02",
       "endDate": "2023-12-31",
       "summary": "Desarrollo a medida del cliente sobre plataforma web Esker, utilizando SDK interna, con integraciones con SAP. Soporte a países de LATAM, Asia y Norteamerica. Tecnologías/Herramientas: Html, Css, React, Nodejs, Base de datos SQL",
       "highlights": [
@@ -79,8 +79,8 @@
     "url": "https://www.frgp.utn.edu.ar/",
     "area": "Tecnicatura Universitaria en Programación (Egresado)",
     "studyType": "",
-    "startDate": "2017-01-01",
-    "endDate": "2019-01-01",
+    "startDate": "2017-07-01",
+    "endDate": "2019-12-18",
     "score": "8.85",
     "courses": [
       ""
@@ -92,12 +92,32 @@
     "awarder": "Company",
     "summary": "There is no spoon."
   }],
-  "certificates": [{
+  "certificates": [
+    {
+      "name": "Desarrollo de aplicaciones móviles",
+      "date": "2023-08-01",
+      "issuer": "TICMAS",
+      "url": "https://api.profesional.ticmas.io/v1/certificates-download/772ef80d-9cb7-4448-ad8c-153881cf2bda---pdf"
+    },
+    {
+      "name": "Universidad Desarrollo Web - FrontEnd Web Developer!",
+      "date": "2023-07-03",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-6160f557-983c-466b-8069-98ec3fa1cc78/"
+    },
+    {
+      "name": "Estructura de datos en JavaScript",
+      "date": "2023-05-01",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-368d7c3e-60fc-44fe-9333-55557adaf3ca/"
+    },
+    {
     "name": "Analista Junior GeneXus 16",
     "date": "2019-09-01",
     "issuer": "GeneXus training",
     "url": "https://training.genexus.com/es/"
-  }],
+    }
+],
   "publications": [{
     "name": "Publication",
     "publisher": "Company",
